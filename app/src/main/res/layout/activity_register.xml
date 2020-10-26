@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vbk.spc.Register">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo"
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Welcome to SPC Collage"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.example.vbk.spc.FButton
+            android:text="StudentLogin"
+            app:buttonColor="@color/fbutton_default_color"
+            app:shadowColor="@color/fbutton_default_shadow_color"
+            app:shadowEnabled="true"
+            app:shadowHeight="5dp"
+            app:cornerRadius="4dp"
+            android:id="@+id/stuLogin"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@android:color/white"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content" />
+
+       <com.example.vbk.spc.FButton
+           android:layout_width="0dp"
+           android:text="StafffLogin"
+           android:layout_height="wrap_content"
+           android:id="@+id/staLogin"
+           app:buttonColor="@color/fbutton_color_silver"
+           app:shadowColor="@color/fbutton_color_silver"
+           app:shadowEnabled="true"
+           app:shadowHeight="5dp"
+           app:cornerRadius="4dp"
+           android:layout_weight="1"
+           android:layout_margin="8dp"
+           />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

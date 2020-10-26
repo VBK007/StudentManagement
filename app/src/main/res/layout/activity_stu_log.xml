@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vbk.spc.stuLog">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/regno"
+           android:hint="Enter RegNo"
+            android:textColorHint="@color/fbutton_color_midnight_blue"
+            android:textSize="32sp"
+            android:textColor="@android:color/white"
+            app:met_baseColor="@color/fbutton_color_midnight_blue"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/fbutton_color_midnight_blue"
+            app:met_singleLineEllipsis="true"
+
+            />
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dob"
+            android:hint="Enter DOB"
+            android:textColorHint="@color/fbutton_color_midnight_blue"
+            android:textSize="32sp"
+            android:textColor="@android:color/white"
+            app:met_baseColor="@color/fbutton_color_midnight_blue"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/fbutton_color_midnight_blue"
+            app:met_singleLineEllipsis="true"
+
+            />
+
+    </LinearLayout>
+
+
+   <com.example.vbk.spc.FButton
+       android:id="@+id/btnStuLogin"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Login"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       app:buttonColor="@color/fbutton_color_green_sea"
+       app:shadowColor="@color/fbutton_color_green_sea"
+       app:shadowEnabled="true"
+       app:shadowHeight="4dp"
+       app:cornerRadius="5dp"
+       android:layout_alignParentBottom="true"
+       android:layout_marginTop="19dp"
+       />
+
+
+</RelativeLayout>
